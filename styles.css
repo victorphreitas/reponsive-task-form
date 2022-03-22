@@ -1,18 +1,44 @@
 body {
   background-color: black;
-  background-image: url("/images/download.png");
+  background-image: url("/download.png");
+  background-repeat: no-repeat;
 }
 
 @keyframes changeSize {
   from {width: 100%;}
   to {width: 50%;}
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   body {
-    background-color: red;
+    background-position: center;
+    transition-duration: 3s;
+  }
+  .form {
+    width: 70%;
+    transition-duration: 400ms;
   }
   .submit-button:hover {
-   color: red;
+   color: #fff3cd;
+  }
+  .clear-tasks:hover {
+    color: #fff3cd;
+   }
+}
+@media (max-width: 850px) {
+  .form {
+    width: 80%;
+    transition-duration: 300ms;
+  }
+}
+
+@media (max-width: 550px) {
+  body {
+    background-position: top;
+    transition-duration: 3s;
+  }
+  .form {
+    width: 90%;
+    transition-duration: 300ms;
   }
 }
 
@@ -67,4 +93,10 @@ label {
 
 .close:hover {
   color: red;
+}
+
+.alert {
+  background-color: #fff3cd;
+  margin: 0;
+  border-radius: 0;
 }

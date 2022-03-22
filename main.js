@@ -82,7 +82,18 @@ function addTask(e){
   });
   e.preventDefault();
  } else {
-   alert("Type a task");
+   //create a new li item type alert
+   const warning = document.createElement("li")
+   //append a class to it 
+   warning.className = "list-group-item container-item alert alert-warning"
+   //adding text into it 
+   warning.innerText = "WARNING: You should add a task!"
+   //appending it to its parent
+   ul.appendChild(warning)
+   setTimeout(()=>{
+     warning.remove()
+   },3500)
+   e.preventDefault();
  }
 }
 
