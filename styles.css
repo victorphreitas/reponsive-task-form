@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  background-image: url("/download.png");
+  background-image: url("https://raw.githubusercontent.com/victorphreitas/reponsive-task-form/main/download.png");
   background-repeat: no-repeat;
 }
 
