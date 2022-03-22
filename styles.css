@@ -5,8 +5,12 @@ body {
 }
 
 @keyframes changeSize {
-  from {width: 100%;}
-  to {width: 50%;}
+  from {
+    width: 100%;
+  }
+  to {
+    width: 80%;
+  }
 }
 @media (max-width: 1000px) {
   body {
@@ -26,7 +30,7 @@ body {
 }
 @media (max-width: 850px) {
   .form {
-    width: 80%;
+    width: 85%;
     transition-duration: 300ms;
   }
 }
@@ -50,7 +54,7 @@ h2 {
   font-weight: 600;
 }
 form {
-  width: 50%;
+  width: 80%;
   margin: 0 auto 0 auto;
   animation-name: changeSize;
   animation-duration: 3s;
